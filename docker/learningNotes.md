@@ -46,7 +46,17 @@ In the above two commands, slim indicates to get a smaller version, --rm is to d
 As the docker containers are stateless, we cannot store/save data in it.
 So, a common way to store data is attaching volumes
 
+# Virtual Environments and Data Pipelines 
+- A data pipeline is a service that receives data as input and output more data.
+- For example, reading a csv file, transforming the data somehow and storing it as a table in a PostgreSQL table 
+
+![alt text](image.png)
 
 
+Objective of this workshop is to build a pipeline that
+- Download CSV data from the web
+- Transform and clean the data with pandas
+- Load it into PostgreSQL for querying 
+- Process data in chunks to handle large files
 
 
